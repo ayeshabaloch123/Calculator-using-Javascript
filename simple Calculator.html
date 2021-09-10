@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<style>
+		#forms
+		{
+			margin-top: 40px;
+		}
+		#text,#button
+		{
+			width: 250px;
+			height: 30px;
+		}
+		input
+		{
+			width: 80px;
+			height: 30px;
+			margin-top: 9px;
+			padding: 2pxs;
+			background-color: black;
+			color: white;
+		}
+
+		
+	</style>
+</head>
+<body>
+<center>
+	<form id="forms" name="forms">
+		<input type="text" name="text"id="text"><br>
+		
+		<input type="button" value="1" onclick="forms.text.value+='1'">
+		<input type="button" value="2" onclick="forms.text.value+='2'">
+		<input type="button" value="3" onclick="forms.text.value+='3'">
+		<br>
+		<input type="button" value="4" onclick="forms.text.value+='4'">
+		<input type="button" value="5" onclick="forms.text.value+='5'">
+		<input type="button" value="6" onclick="forms.text.value+='6'">
+		<br>
+		<input type="button" value="7" onclick="forms.text.value+='7'">
+		<input type="button" value="8" onclick="forms.text.value+='8'">
+		<input type="button" value="9" onclick="forms.text.value+='9'">
+         <br>
+
+		<input type="button" value="+" onclick="forms.text.value+='+'">
+		<input type="button" value="-" onclick="forms.text.value+='-'">
+		<input type="button" value="/" onclick="forms.text.value+='/'">
+         <br>
+		<input type="button" value="*" onclick="forms.text.value+='*'">
+		<input type="button" value="0" onclick="forms.text.value+='0'">
+		<input type="button" value="=" onclick="forms.text.value=eval(forms.text.value)">
+		<br>
+
+		<input type="button" value="Clear All" name="button" id="button"onclick="forms.text.value=' '">
+		
+		
+		
+		
+	</form>
+</center>
+</body>
+</html>
